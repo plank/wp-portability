@@ -5,7 +5,6 @@
 
 	<form method="post" action="options.php">
 		<?php
-		// This prints out all hidden setting fields
 		settings_fields( 'portability_group' );
 		do_settings_sections( 'portability_group' );
 		?>

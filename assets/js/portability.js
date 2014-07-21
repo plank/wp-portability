@@ -33,12 +33,10 @@
 	};
 
 	var prepSend = function(){
-		// $('#plk-wp-insert-shortcodes,#plk-wp-purge-shortcodes').attr('disabled',true);
 		count = 0;
 		running = true;
 	};
 	var finishSend = function(){
-		// $('#plk-wp-insert-shortcodes,#plk-wp-purge-shortcodes').attr('disabled',false);
 		count = 0;
 		running = false;
 		$('.spinner').hide();

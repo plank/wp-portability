@@ -1,15 +1,10 @@
 <?php
 /**
- * Nonce Helpers
- *
- * @author Sean Fraser <sean@plankdesign.com>
- */
-
-/**
  * Nonce Helper
  *
  * A persistent object-oriented wrapper of Wordpress's nonce API. Values are retained to facilitate validation
  * @see  http://codex.wordpress.org/WordPress_Nonces WP Nonce API
+ * @author Sean Fraser <sean@plankdesign.com>
  */
 class Nonce{
 	/**

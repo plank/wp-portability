@@ -16,6 +16,11 @@ if(!defined('WP_PORTABILITY')){
 require_once dirname(__FILE__) . '/classes/nonce.php';
 require_once dirname(__FILE__) . '/classes/url-shortcode.php';
 
+/**
+ * WP-Portability Plugin central controller
+ *
+ * @author Sean Fraser <sean@plankdesign.com>
+ */
 class PLKPortability{
 	/**
 	 * Current state of settings based on.
@@ -23,6 +28,10 @@ class PLKPortability{
 	 */
 	protected $settings = array();
 
+	/**
+	 * Used to keep track of the nonce values of the plugin
+	 * @var Nonce
+	 */
 	protected $nonce;
 
 	/**
@@ -239,4 +248,5 @@ class PLKPortability{
 
 }
 
+//Time to get this show on the road...
 $plk_wp_portability = new PLKPortability();
