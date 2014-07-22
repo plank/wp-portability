@@ -1,19 +1,19 @@
 # WP-Portability
-Contributors: frasmage
-Author: Plank Design Inc.
-Tags: portability, installation, mobility, url, shortcode, portable, domain-agnostic, relocation
-Requires at least: 3.1
-Tested up to: 3.9
-Stable tag: 1.0
-License: GPLv2 or later
+* Contributors: frasmage
+* Author: Plank Design Inc.
+* Tags: portability, installation, mobility, url, shortcode, portable, domain-agnostic, relocation
+* Requires at least: 3.1
+* Tested up to: 3.9
+* Stable tag: 1.0
+* License: GPLv2 or later
 
-Polylang adds multilingual content management support to WordPress.
+WP-Portability is a plugin designed to quietly make your site more portable.
 
 ## Description
 
 ### Summary
 
-WP-Portability is a plugin designed to quietly make your site more portable. It is to designed to facilitate the work that needs to be done when and if a website needs to be moved to another directory or server or if the domain name changes. This plugin does not assist with the actual relocation of the WordPress. Instead, it makes WordPress much less attached and dependant on its install directory and domain name making the process much easier to do.
+WP-Portability is a plugin designed to quietly make your site more portable. It is to designed to facilitate the work that needs to be done to be move a wordpress install to another directory or server or domain name. It makes WordPress much less attached and dependant on its install directory and domain name.
 
 Though anyone can make use of WP-Portability, it was designed with developers in mind. It greatly facilitates designing sites locally amongst a team of developers, moving the site to a staging server and finally pushing it live.
 

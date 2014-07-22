@@ -112,6 +112,8 @@ class PLKPortability{
 
 		$shortcode = LocalURLShortcode::getInstance();
 		$shortcode->autoinsert = $this->settings['url_shortcode_inject'];
+
+		register_activation_hook(__FILE__, array($this, '_flushRewrites'));
 	}
 
 	/**
@@ -152,6 +154,7 @@ class PLKPortability{
 				$input[$key] = false;
 			}
 		}
+
 		return $input;
 	}
 
@@ -244,6 +247,14 @@ class PLKPortability{
 			);
 		}
 		wp_send_json_success(array('count'=>count($posts)));
+	}
+
+	/**
+	 * Hook: Flush rewrite rules
+	 */
+	public function _flushRewrites(){
+		global $wp_rewrites;
+		$wp_rewrites->flush_rules(true);
 	}
 
 }
