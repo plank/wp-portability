@@ -253,8 +253,7 @@ class PLKPortability{
 	 * Hook: Flush rewrite rules
 	 */
 	public function _flushRewrites(){
-		global $wp_rewrites;
-		$wp_rewrites->flush_rules(true);
+		flush_rewrite_rules(true);
 	}
 
 }
